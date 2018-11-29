@@ -163,6 +163,8 @@ for i = 1, #runes do
 
     minetest.register_node(rune_node_name, {
       description = S(rune_node_description, rune_description),
+      is_ground_content = false,
+      groups = {cracky = 2},
       tiles = {"default_"..k..".png^"..rune_image}
     })
 
@@ -329,7 +331,3 @@ local function register_rune_crafts()
 end
 
 register_rune_crafts()
-
-
-
-
