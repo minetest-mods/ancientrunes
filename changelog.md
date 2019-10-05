@@ -1,3 +1,7 @@
+Version 0.1.3
+-------------
+Fix Mannaz rune
+
 Version 0.1.2
 -------------
 Fixed crafting recipe for Rune Powder
