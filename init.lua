@@ -1,7 +1,7 @@
 --[[
 =====================================================================
 ** Ancient Runes **
-Copyright (c) 2018 Marius Spix <marius.spix@web.de>
+Copyright (c) 2018, 2019 Marius Spix <marius.spix@web.de>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,9 +17,7 @@ limitations under the License.
 =====================================================================
 --]]
 
--- Load support for intllib.
-local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+local S = minetest.get_translator(minetest.get_current_modname())
 
 local function display_powder(position, texture)
   local minpos, maxpos = vector.subtract(position, 6), vector.add(position, 6)
@@ -182,7 +180,7 @@ local function register_runes()
 	for i = 1, #runes do
 	  local r                = runes[i]
 	  local rune_name        = "ancientrunes:rune_"..r
-	  local rune_description = S(r:gsub("^%l", string.upper))
+	  local rune_description = S((r:gsub("^%l", string.upper)))
 	  local rune_image       = "ancientrunes_overlay_"..r..".png"
 
 	  minetest.register_craftitem(rune_name, {
