@@ -1,7 +1,7 @@
 --[[
 =====================================================================
 ** Ancient Runes **
-Copyright (c) 2018, 2019 Marius Spix <marius.spix@web.de>
+Copyright (c) 2018-2025 Marius Spix <marius.spix@web.de>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -203,7 +203,7 @@ local function register_runes()
 		minetest.register_node(rune_node_name, {
 		  description = S(rune_node_description, rune_description),
 		  is_ground_content = false,
-		  groups = {cracky = 2},
+		  groups = minetest.registered_nodes[node_name].groups,
 		  tiles = {"default_"..k..".png^"..rune_image}
 		})
 
