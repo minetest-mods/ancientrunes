@@ -90,12 +90,12 @@ end
 
 local function register_burins()
 	local materials = {
-	  { material = "wood",    resource = "group:wood",           name = S("Wood Burin"),    times = { [1] = 3.61, [2] = 2.28, [3] = 0.94 },  uses =  8 },
-	  { material = "stone",   resource = "group:stone",          name = S("Stone Burin"),   times = { [1] = 2.69, [2] = 1.74, [3] = 0.79 },  uses = 11 },
-	  { material = "steel",   resource = "default:steel_ingot",  name = S("Steel Burin"),   times = { [1] = 1.41, [2] = 0.97, [3] = 0.52 },  uses = 21 },
-	  { material = "bronze",  resource = "default:bronze_ingot", name = S("Bronze Burin"),  times = { [1] = 1.14, [2] = 0.80, [3] = 0.46 },  uses = 26 },
-	  { material = "mese",    resource = "default:mese_crystal", name = S("Mese Burin"),    times = { [1] = 0.43, [2] = 0.33, [3] = 0.24 },  uses = 70 },
-	  { material = "diamond", resource = "default:diamond",      name = S("Diamond Burin"), times = { [1] = 0.37, [2] = 0.29, [3] = 0.21 },  uses = 82 }
+	  { material = "wood",    resource = "group:wood",           name = S("Wood Burin"),    times = { [1] = 3.61, [2] = 2.28, [3] = 0.94 },  uses =  16 },
+	  { material = "stone",   resource = "group:stone",          name = S("Stone Burin"),   times = { [1] = 2.69, [2] = 1.74, [3] = 0.79 },  uses = 22 },
+	  { material = "steel",   resource = "default:steel_ingot",  name = S("Steel Burin"),   times = { [1] = 1.41, [2] = 0.97, [3] = 0.52 },  uses = 43 },
+	  { material = "bronze",  resource = "default:bronze_ingot", name = S("Bronze Burin"),  times = { [1] = 1.14, [2] = 0.80, [3] = 0.46 },  uses = 53 },
+	  { material = "mese",    resource = "default:mese_crystal", name = S("Mese Burin"),    times = { [1] = 0.43, [2] = 0.33, [3] = 0.24 },  uses = 140 },
+	  { material = "diamond", resource = "default:diamond",      name = S("Diamond Burin"), times = { [1] = 0.37, [2] = 0.29, [3] = 0.21 },  uses = 162 }
 	}
 
 	local drops = {
@@ -110,10 +110,10 @@ local function register_burins()
 	}
 
 	if minetest.get_modpath("moreores") then
-	  table.insert( materials, { material = "silver",  resource = "moreores:silver_ingot",  name = S("Silver Burin"),  times = { [1] = 0.60, [2] = 0.45, [3] = 0.30 }, uses = 50 } )
-	  table.insert( materials, { material = "mithril", resource = "moreores:mithril_ingot", name = S("Mithril Burin"), times = { [1] = 0.41, [2] = 0.32, [3] = 0.23 }, uses = 73 } )
+	  table.insert( materials, { material = "silver",  resource = "moreores:silver_ingot",  name = S("Silver Burin"),  times = { [1] = 0.60, [2] = 0.45, [3] = 0.30 }, uses = 100 } )
+	  table.insert( materials, { material = "mithril", resource = "moreores:mithril_ingot", name = S("Mithril Burin"), times = { [1] = 0.41, [2] = 0.32, [3] = 0.23 }, uses = 146 } )
 	  drops["moreores:mineral_silver"]  = { iron_powder = 70, mese_powder =  2 }
-	  drops["moreores:mineral_mithril"] = { iron_powder = 36, mese_powder =  6 }
+	  drops["moreores:mineral_mithril"] = { iron_powder = 35, mese_powder =  7 }
 	end
 
 	minetest.register_on_punchnode(

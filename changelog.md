@@ -1,3 +1,7 @@
+Version 0.2.3
+-------------
+Significantly increased durability, tweaked drop rates
+
 Version 0.2.2
 -------------
 Translation fixes
