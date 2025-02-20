@@ -1,3 +1,7 @@
+Version 0.2.2
+-------------
+Translation fixes
+
 Version 0.2.1
 -------------
 Fix block breakability
